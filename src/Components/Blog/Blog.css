@@ -1,0 +1,26 @@
+
+.blog-container {
+    margin-top: 20px;
+    display: block; 
+}
+
+.knowledge-container,
+.cart-container {
+    border: 1px solid gray;
+    margin-bottom: 20px; 
+    padding: 10px; 
+}
+
+@media (min-width: 768px) {
+    .blog-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+    }
+
+    .knowledge-container,
+    .cart-container {
+        margin-bottom: 0; 
+    }
+}
+
